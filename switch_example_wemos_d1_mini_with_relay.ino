@@ -36,21 +36,21 @@ void turnOn(String deviceId) {
      digitalWrite(relayPin1, HIGH); 
   }
    
-  if (deviceId == "5axxxxxxxxxxxxxxxxxxx") 
+else if (deviceId == "5axxxxxxxxxxxxxxxxxxx") 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     
      digitalWrite(relayPin2, HIGH); 
   }
 
-   if (deviceId == "5axxxxxxxxxxxxxxxxxxx") 
+else if (deviceId == "5axxxxxxxxxxxxxxxxxxx") 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     
      digitalWrite(relayPin3, HIGH); 
   } 
 
-  if (deviceId == "5axxxxxxxxxxxxxxxxxxx") 
+else if (deviceId == "5axxxxxxxxxxxxxxxxxxx") 
     Serial.print("Turn on device id: ");
     Serial.println(deviceId);
     
@@ -68,7 +68,31 @@ void turnOff(String deviceId) {
      Serial.print("Turn off Device ID: ");
      Serial.println(deviceId);
      
-     digitalWrite(relayPin, LOW);  
+     digitalWrite(relayPin1, LOW);  
+   }
+
+else if (deviceId == "5axxxxxxxxxxxxxxxxxxx") 
+   {  
+     Serial.print("Turn off Device ID: ");
+     Serial.println(deviceId);
+     
+     digitalWrite(relayPin2, LOW);  
+   }
+
+else if (deviceId == "5axxxxxxxxxxxxxxxxxxx") 
+   {  
+     Serial.print("Turn off Device ID: ");
+     Serial.println(deviceId);
+     
+     digitalWrite(relayPin3, LOW);  
+   }
+
+else if (deviceId == "5axxxxxxxxxxxxxxxxxxx") 
+   {  
+     Serial.print("Turn off Device ID: ");
+     Serial.println(deviceId);
+     
+     digitalWrite(relayPin4, LOW);  
    }
    else {
      Serial.print("Turn off for unknown device id: ");
